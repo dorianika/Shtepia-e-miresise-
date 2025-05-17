@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shtepia e Miresise - Residential Care Facility</title>
+  <meta name="description" content="Shtepia e Miresise offers personalized residential care and therapy services in a safe, comfortable environment.">
+  <meta name="keywords" content="residential care, therapy services, elderly care, health, Albania">
+  <meta name="author" content="Shtepia e Miresise Facility">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="cookie-banner">
+    <p>This website uses cookies to ensure you get the best experience. <a href="privacy-policy.html">Learn more</a></p>
+    <button id="accept-cookies">Accept</button>
+  </div>
+  <script>
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+      document.getElementById('cookie-banner').style.display = 'none';
+      localStorage.setItem('cookiesAccepted', 'true');
+    });
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  </script>
+  <header>
+    <h1>Welcome to Shtepia e Miresise</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Shtepia e Miresise is a residential care facility offering personalized services near hospitals in Tirana, Durrës, and Vlorë.</p>
+      <img src="images/facility-image.jpg" alt="View of the residential care facility exterior" />
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>24/7 Residential Care</li>
+        <li>Therapeutic Services</li>
+        <li>Recreational Programs</li>
+        <li>Nutritional Support</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label>Name: <input type="text" required></label>
+        <label>Email: <input type="email" required></label>
+        <label>Message: <textarea required></textarea></label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Shtepia e Miresise. All rights reserved.</p>
+  </footer>
+</body>
+</html>
