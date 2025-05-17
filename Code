@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shtepia e Miresise - Residential Care Facility</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Shtepia e Miresise offers personalized residential care and therapy services in a safe, comfortable environment.">
+    <meta name="keywords" content="residential care, therapy services, elderly care, health, Albania">
+    <meta name="author" content="Shtepia e Miresise Facility">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-XXXXXX-X');
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" style="background-color: #333; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; text-align: center;">
+    <p>This website uses cookies to ensure you get the best experience on our website. <a href="privacy-policy.html" style="color: #fff;">Learn more</a></p>
+    <button id="accept-cookies" style="background-color: #4CAF50; color: white; padding: 5px 10px; border: none; cursor: pointer;">Accept</button>
+</div>
+
+<script>
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        localStorage.setItem('cookiesAccepted', 'true');
+    });
+
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
+
+<header>
+    <h1>Welcome to Shtepia e Miresise</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Shtepia e Miresise is a residential care facility designed to provide personalized care and therapeutic services in a comfortable, home-like setting. Located near major hospitals in Tirana, Durrës, and Vlorë, we prioritize the well-being of our residents, offering customized care plans.</p>
+        <img src="images/facility-image.jpg" alt="View of the residential care facility exterior">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>24/7 Residential Care</li>
+            <li>Therapeutic Services including physical, occupational, and speech therapy</li>
+            <li>Daily Activities and Recreational Programs</li>
+            <li>Dietary and Nutritional Support tailored to individual needs</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Shtepia e Miresise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#cookie-banner {
+    text-align: center;
+    font-size: 14px;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Shtepia e Miresise</title>
+</head>
+<body>
+
+<header>
+    <h1>Privacy Policy</h1>
+</header>
+
+<main>
+    <h2>Introduction</h2>
+    <p>At Shtepia e Miresise, we respect your privacy and are committed to protecting the personal information you share with us when using our website.</p>
+
+    <h2>Information We Collect</h2>
+    <p>We may collect personal information such as your name, email address, and message content when you contact us via our website’s contact form.</p>
+
+    <h2>How We Use Your Information</h2>
+    <p>Your information will be used to respond to your inquiry or provide the services you've requested. We do not sell, rent, or trade your personal information.</p>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to access, correct, or delete your personal information. Please contact us if you wish to exercise these rights.</p>
+</main>
+
+<footer>
+    <p>&copy; 2025 Shtepia e Miresise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Shtepia e Miresise</title>
+</head>
+<body>
+
+<header>
+    <h1>Terms of Service</h1>
+</header>
+
+<main>
+    <h2>Introduction</h2>
+    <p>By accessing or using our website and services, you agree to comply with the terms outlined below.</p>
+
+    <h2>Services Provided</h2>
+    <p>We provide residential care and therapy services to individuals in need. All services are customized based on individual care plans and needs.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>We are not liable for any indirect, incidental, or consequential damages that may result from the use of our website or services.</p>
+
+    <h2>Modifications</h2>
+    <p>We may update these terms periodically. Please review them regularly to stay informed of any changes.</p>
+</main>
+
+<footer>
+    <p>&copy; 2025 Shtepia e Miresise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
